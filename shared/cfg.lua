@@ -7,7 +7,7 @@ dnj.snpc = { -- start npc
 }
 
 dnj.rq = 'dnj_illegalscuba' -- required item
-dnj.scuba = 250 
+dnj.scuba = 250 -- 250 seconds = 4 mins
 dnj.cldown = 20 * 60 
 
 dnj.props = {
