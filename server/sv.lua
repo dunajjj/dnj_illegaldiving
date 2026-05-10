@@ -5,10 +5,10 @@ local function g()
     return tostring(math.random(100000, 999999)) .. tostring(os.time())
 end
 
-lib.callback.register('dnj_illegaldiving:getlore', function(source)
+--[[lib.callback.register('dnj_illegaldiving:getlore', function(source)
     local lore = exports.esx_identity:getlore(source)
     return lore
-end)
+end)]]
 
 lib.callback.register('dnj_illegaldiving:check', function(source)
     local xpl = ESX.GetPlayerFromId(source)
@@ -44,12 +44,12 @@ lib.callback.register('dnj_illegaldiving:rent', function(source, price)
     return false, nil
 end)
 
-lib.callback.register('dnj_illegaldiving:rw', function(source, token, missionIndex)
+lib.callback.register('dnj_illegaldiving:rw', function(source, token, missionindex)
     if not acms[source] or acms[source] ~= token then
         return false
     end
 
-    local mission = dnj.msn[missionIndex]
+    local mission = dnj.msn[missionindex]
     if not mission then return false end
 
     local item = mission.rwr.items[math.random(#mission.rwr.items)]
