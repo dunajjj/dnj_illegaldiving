@@ -79,7 +79,7 @@ dnj.msn = {
         },
         rwr = {
             items = {
-                --[[]'dnj_ductape',
+                --[['dnj_ductape',
                 'dnj_gunpowder',
                 'dnj_chestplate',
                 'dnj_kevlarfiber',
