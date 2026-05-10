@@ -56,12 +56,12 @@ lib.callback.register('dnj_illegaldiving:rw', function(source, token, missionInd
     local count = math.random(mission.rwr.min, mission.rwr.max)
     local playername = GetPlayerName(source)
     if exports.ox_inventory:CanCarryItem(source, item, count) then
-        exports['dnj_logs']:sendlog(
+        --[[exports['dnj_logs']:sendlog(
         'diving', 
         'Vzal item - dnj illegal diving', 
         'Hráč **' .. playername .. '** vzal **' .. item .. '** **'.. count .. '**x.', 
         'info' 
-        )
+        )]]
         exports.ox_inventory:AddItem(source, item, count)
         return true
     end
