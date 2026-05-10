@@ -152,7 +152,7 @@ local function loop()
                     local dist = #(pedcoords - propcoords)
                     
                     if dist <= 45.0 then
-                        if not IsEntityFocus(data.object) then 
+                       -- if not IsEntityFocus(data.object) then -- useless
                              SetEntityDrawOutline(data.object, true)
                              SetEntityDrawOutlineColor(148, 0, 211, 255)
                         end
