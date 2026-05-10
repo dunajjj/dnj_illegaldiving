@@ -10,7 +10,7 @@ local tE = nil
 
 function dispatch()
 
-    local ped = PlayerPedId() -- exports.dnj_dispatch:GetPlayerInfo(source)
+    --[[local ped = PlayerPedId() -- exports.dnj_dispatch:GetPlayerInfo(source)
     local coords = GetEntityCoords(ped)
 
     TriggerServerEvent('dnj_dispatch:server:AddNotification', {
@@ -28,12 +28,12 @@ function dispatch()
             text = '911 - Potápění',
             time = 4 
         }
-    })
+    })]]
 
 end
 
 
-local function dealerblip()
+--[[local function dealerblip()
     local lore = lib.callback.await('dnj_illegaldiving:getlore', false)
     
     if lore == "dealer" then 
@@ -46,7 +46,7 @@ local function dealerblip()
         label = 'Dealer'
     })
     end
-end
+end]]
 
 
 local function npc(coords, model, scenario)
@@ -346,10 +346,10 @@ end)
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function(xPlayer)
     Wait(1000)
-    dealerblip()
+  --  dealerblip()
 end)
 
 CreateThread(function()
     Wait(2000)
-    dealerblip()
+  --  dealerblip()
 end)
