@@ -14,7 +14,7 @@ function dispatch()
     local coords = GetEntityCoords(ped)
 
     TriggerServerEvent('dnj_dispatch:server:AddNotification', {
-        jobs = {'police', 'sheriff', 'sheriff'}, 
+        jobs = {'police', 'sheriff', 'sahp'}, 
         coords = coords, -- data.coords
         code = '10-18',
         title = 'Nelegálni potápění',
