@@ -3,4 +3,4 @@
 
 ## Installation 
 
-Check dnj_illegaldiving/__instllation__ 
+Check dnj_illegaldiving/__installation__ 
