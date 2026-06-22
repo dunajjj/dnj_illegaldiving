@@ -5,6 +5,6 @@
 		stack = false,
 		close = true,
 		client = {
-			event = 'dnj_diving:scb'
+			event = 'dnj_illegaldiving:usescuba'
 		}
 	},
