@@ -128,8 +128,8 @@ local function loot(entity)
                 --[[else -- TODO : idk ci to nepise error
                     if rprops <= 1 then
                     lib.notify({
-                        description = "Poslední předmět!"
-                        type = info
+                        description = "Chybí poslední předmět! Vezmi ho!"
+                        type = 'warning'
                     })
                     end]]
                 end
@@ -214,10 +214,10 @@ local function startafterspawn(data)
                 label = 'Vzít šrot',
                 onSelect = function(data)
                     local chance = math.random(1,100)
-                    if chance < 35 then
+                    if chance < 35 then -- 100 = 100% chance na dispatch
                         dispatch()
                     end
-                --    dispatch()
+                --    dispatch() 
                     loot(data.entity)
                 end
             }
