@@ -125,7 +125,8 @@ local function loot(entity)
                         description = 'Ještě ' .. rprops .. ' předmětů.', 
                         type = 'info'
                     })
-                --[[else -- TODO : idk ci to nepise error
+                --[[ TODO : idk ci to nepise error
+                else 
                     if rprops <= 1 then
                     lib.notify({
                         description = "Chybí poslední předmět! Vezmi ho!"
