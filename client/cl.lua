@@ -302,7 +302,7 @@ CreateThread(function()
     })
 end)
 
-RegisterNetEvent('dnj_diving:scb', function()
+RegisterNetEvent('dnj_illegaldiving:usescuba', function()
     if scuba then return end
     scuba = true
     
