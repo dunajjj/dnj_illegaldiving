@@ -1,0 +1,9 @@
+		['dnj_illegalscuba'] = {
+		label = 'Nelegální potápěčská maska',
+		weight = 150,
+		stack = false,
+		close = true,
+		client = {
+			event = 'dnj_diving:scb'
+		}
+	},
