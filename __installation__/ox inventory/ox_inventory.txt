@@ -1,4 +1,5 @@
-		['dnj_illegalscuba'] = {
+
+['dnj_illegalscuba'] = {
 		label = 'Nelegální potápěčská maska',
 		weight = 150,
 		stack = false,
