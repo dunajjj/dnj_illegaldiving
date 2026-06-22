@@ -281,7 +281,8 @@ CreateThread(function()
             icon = 'fa-solid fa-lungs',
             label = 'Promluvit o práci',
             onSelect = function()
-                if acm then --- @param acm string
+                if acm then
+                --- @param acm string
                     lib.notify({type = 'error', description = 'Už něco děláš.'})
                     return
                 end
